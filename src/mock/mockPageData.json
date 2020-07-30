@@ -1,0 +1,33 @@
+{
+  "Home": {
+    "$class":"Page",
+    "id": "page_1",
+    "appScreen": {
+      "$class":"AppScreen",
+      "id":"AppScreen_d2d0cca7",
+      "items": [
+        {
+          "$class": "AppButtom",
+          "id": "AppButtom_1",
+          "name": "跳转按钮",
+          "event": {
+            "type": "jump",
+            "goalPage": "Detail",
+            "params": {
+              "id": "12312"
+            }
+          }
+        },
+        {
+          "$class": "AppButtom",
+          "id": "AppButtom_2",
+          "name": "功能按钮",
+          "event": {
+            "type": "el",
+            "eval": {"componentId":"AppButtom_1","func":{"name":"handleSetState","params":{"name":"hello"}}}
+          }
+        }
+      ]
+    }
+  }
+}
