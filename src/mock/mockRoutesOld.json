@@ -1,0 +1,24 @@
+{
+  "tab": {
+    "name": "Hiforce",
+    "page": [
+      {
+        "name": "Home", "title": "Home"
+      },
+      {
+        "name": "User", "title": "User"
+      },
+      {
+        "name": "Set", "title": "Set"
+      }
+    ]
+  },
+  "page": [
+    {
+      "name": "Login", "title": "Login"
+    },
+    {
+      "name": "Detail", "title": "Detail title"
+    }
+  ]
+}

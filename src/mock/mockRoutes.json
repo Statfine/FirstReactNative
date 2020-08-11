@@ -1,24 +1,35 @@
 {
-  "tab": {
-    "name": "Hiforce",
-    "page": [
-      {
-        "name": "Home", "title": "Home"
-      },
-      {
-        "name": "User", "title": "User"
-      },
-      {
-        "name": "Set", "title": "Set"
-      }
-    ]
-  },
-  "page": [
+  "initialRouteName": "Hiforce",
+  "pages": [
     {
-      "name": "Login", "title": "Login"
+      "type": "tab",
+      "name": "Hiforce",
+      "initialRouteName": "User",
+      "pages": [
+        { "name": "Home", "title": "Home" },
+        { "name": "User", "title": "User"},
+        { "name": "Set", "title": "Set" }
+      ]
     },
     {
-      "name": "Detail", "title": "Detail title"
+      "type": "page",
+      "page": { "name": "Home", "title": "Home" }
+    },
+    {
+      "type": "page",
+      "page": { "name": "User", "title": "User" }
+    },
+    {
+      "type": "page",
+      "page": { "name": "Set", "title": "Set" }
+    },
+    {
+      "type": "page",
+      "page": { "name": "Login", "title": "Login" }
+    },
+    {
+      "type": "page",
+      "page": { "name": "Detail", "title": "Detail title" }
     }
   ]
 }

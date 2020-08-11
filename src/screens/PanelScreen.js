@@ -15,10 +15,13 @@ export default class PanelScreen extends React.Component {
 
   UNSAFE_componentWillMount() {
     const { navigation, route } = this.props;
-    // console.log(this.props);
+    console.log('navigation', this.props.navigation);
     // console.log('data==>', mockPageData[route.name]);
     console.log(route.name, 'UNSAFE_componentWillMount');
     const page = mockPageData[route.name];
+    navigation.setOptions({
+      title: route.name,
+    });
     this.setState({ page });
     if (page && page.id) {
       HiGlobal[page.id] = this;
